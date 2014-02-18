@@ -46,19 +46,15 @@ Full instructions can be found in the [Contributing Guide](https://github.com/Tr
 
 Check out the [Documentation](http://docs.ghost.org/) for more detailed instructions, or get in touch via the [forum](http://ghost.org/forum) if you get stuck.
 
+If you want to use [Ghost as a NPM module there is a Wiki entry](https://github.com/TryGhost/Ghost/wiki/Using-Ghost-as-a-NPM-module) where you can find instructions on how to get set up.
+
 ### Updating with the latest changes
 
 Documentation on updating can be found in the [Ghost Guide](http://docs.ghost.org/installation/upgrading/)
 
 ### Logging in For The First Time
 
-Once you have the Ghost server up and running, you should be able to navigate to `http://localhost:2368/ghost/` from a web browser, where you will be prompted for a login.
-
-1.  Click on the "register new user" link
-2.  Enter your user details
-3.  Return to the login screen and use those details to log in.
-
-Note - this is still very alpha. Not everything works yet.
+Once you have the Ghost server up and running, you should be able to navigate to `http://localhost:2368/ghost/` from a web browser, where you will be prompted to register a new user. Once you have entered your desired credentials you will be automatically logged in to the admin area.
 
 
 ## Community
@@ -89,7 +85,7 @@ Constructed with the following guidelines:
 
 ## Copyright & License
 
-Copyright (C) 2013 The Ghost Foundation - Released under the MIT License.
+Copyright (C) 2014 The Ghost Foundation - Released under the MIT License.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 

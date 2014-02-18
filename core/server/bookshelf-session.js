@@ -1,7 +1,6 @@
 var Store = require('express').session.Store,
     time12h = 12 * 60 * 60 * 1000,
     BSStore,
-    dataProvider,
     db,
     client;
 
@@ -39,11 +38,11 @@ BSStore.prototype.set = function (sid, sessData, callback) {
     sessionModel.forge({id: sid}).fetch()
         .then(function (model) {
             if (model) {
-                sessionModel.forge({id: sid, expires: expires, sess: sessData }).save();
-            } else {
-                sessionModel.forge({id: sid, expires: expires, sess: sessData })
-                    .save(null, {method: 'insert'});
+                return sessionModel.forge({id: sid, expires: expires, sess: sessData }).save();
             }
+            return sessionModel.forge({id: sid, expires: expires, sess: sessData })
+                .save(null, {method: 'insert'});
+        }).then(function () {
             callback();
         });
 };
